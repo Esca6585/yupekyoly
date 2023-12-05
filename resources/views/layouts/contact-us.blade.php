@@ -16,8 +16,8 @@
                     </div>
                     <div class="singel-corporat-wrap col-6">
                         <p>
-                            <i class="flaticon2-black-back-closed-envelope-shape"></i> esca656585@gmail.com
-
+                            <i class="flaticon2-black-back-closed-envelope-shape"></i> 
+                            <a class="mail" href="mailto::esca656585@gmail.com">esca656585@gmail.com</a>
                         </p>
                     </div>
                     <div class="singel-corporat-wrap col-6">

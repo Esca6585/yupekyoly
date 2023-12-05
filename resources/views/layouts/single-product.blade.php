@@ -56,9 +56,9 @@
                                 <div class="quantity">
                                     <input type="number" class="input-box" step="1" min="0" value="1">
                                 </div>
-                                <button class="single_add_to_cart_button">
+                                <a href="{{ route('contact-us', app()->getlocale() ) }}" class="single_add_to_cart_button">
                                     <i class="flaticon2-shopping-cart-1"></i>
-                                </button>
+                                </a>
                             </form>
                         </div>
                     </div>
