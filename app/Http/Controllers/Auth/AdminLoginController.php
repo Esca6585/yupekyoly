@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Tea;
+use App\Models\Product;
 use Auth;
 
 class AdminLoginController extends Controller
@@ -16,9 +16,9 @@ class AdminLoginController extends Controller
 
     public function showLoginForm()
     {
-        $cartTeas = Tea::take(2)->inRandomOrder()->get();
+        $cartProducts = Product::take(4)->inRandomOrder()->get();
 
-        return view('auth.admin-login', compact('cartTeas'));
+        return view('auth.admin-login', compact('cartProducts'));
     }
 
     public function login(Request $request)
