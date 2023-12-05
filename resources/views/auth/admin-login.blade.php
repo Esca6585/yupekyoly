@@ -1,4 +1,4 @@
-@extends('layouts.baychay-template')
+@extends('layouts.yupekyoly-template')
 
 @section('admin-login')
     @include('layouts.admin-login')
