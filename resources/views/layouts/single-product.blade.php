@@ -70,17 +70,14 @@
 
     <div class="related-products pt-100">
         <div class="container">
-            <hr>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h2 class="titel">{{ __('New') }} {{ __('Product') }}</h2>
-                        <p>bir käse çaý rahatlyk çeşmesi</p>
-                        <!-- <p>{{ __('a high-quality product without a fragrance') }}</p> -->
                     </div>
                 </div>
             </div>
-            <hr>
 
             <div class="related-product-wrappner my-5">
                 <div class="row">
@@ -135,7 +132,6 @@
                     </div>
                 </div>
             </div>
-            <hr>
         </div>
     </div>
 
