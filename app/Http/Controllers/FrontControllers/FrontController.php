@@ -17,7 +17,7 @@ class FrontController extends Controller
     {   
         $productLasts = Product::take(4)->where('sale_type', 'New')->inRandomOrder()->get();
 
-        $products = Product::orderByDesc('id')->paginate(32);
+        $products = Product::orderByDesc('id')->paginate(100);
 
         if(request()->ajax()){
             return view('layouts.product-area-2', compact('products'))->render();
