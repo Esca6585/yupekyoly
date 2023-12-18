@@ -45,7 +45,7 @@
                                     </div>
                                 </div>
                                 <div class="product-info text-center">
-                                    <a href="single-product.html">
+                                    <a href="{{ route('single.product', [ app()->getlocale(), $product->id, \Str::slug($product->{ 'name_' . app()->getlocale() }) ]) }}">
                                         <h3>{{ $product->{ 'name_' . app()->getlocale() } }}</h3>
                                     </a>
                                     <div class="price-box">

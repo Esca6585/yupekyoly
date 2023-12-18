@@ -9,7 +9,7 @@
     <meta name="google-site-verification" content="3Omz1--xfp2OmP5DgKMTPXCr-F69HaNo_5w8JeuaKhU" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('baychay-template/img/logo/yupekyoly-logo.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('baychay-template/img/logo/yupekyoly-icon.png') }}">
     <!-- All CSS Hear -->
     <link rel="stylesheet" href="{{ asset('baychay-template/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('baychay-template/css/simple-line-icons.css') }}">
