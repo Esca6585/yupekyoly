@@ -7,6 +7,7 @@
     <title>yupekyoly.com | @yield('title')</title>
     <meta name="description" content="yupekyoly.com">
     <meta name="google-site-verification" content="3Omz1--xfp2OmP5DgKMTPXCr-F69HaNo_5w8JeuaKhU" />
+    <meta name="google-adsense-account" content="ca-pub-4012886709218127">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('baychay-template/img/logo/yupekyoly-icon.png') }}">

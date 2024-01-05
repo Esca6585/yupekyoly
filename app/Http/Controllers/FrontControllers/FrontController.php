@@ -9,7 +9,8 @@ use App\Models\Product;
 use App\Models\Message;
 use Carbon\Carbon;
 use App\Http\Requests\MessageRequest;
-
+use Goutte;
+use Goutte\Client;
 
 class FrontController extends Controller
 {
@@ -55,5 +56,33 @@ class FrontController extends Controller
     public function addShoppingCart(Request $request)
     {
         return 'shopping-cart-dont-work';
+    }
+
+    public function scraper()
+    {
+        $client = new Client();
+        $url = 'https://www.trendyol.com/sr?mid=104814&os=1';
+        $page = $client->request('GET', $url);
+
+        echo $page->filter('.prdct-cntnr-wrppr')->text();
+
+        $data = $page->filter('.prdct-cntnr-wrppr')->text();
+
+        $crawler = Goutte::request('GET', 'https://www.trendyol.com/sr?mid=104814&os=1');
+        $crawler2 = Goutte::request('GET', 'https://www.trendyol.com/sr?mid=104814&os=1');
+        
+        $crawler->filter('.prdct-cntnr-wrppr')->each(function ($node) {
+            dump($node->text());
+        });
+        
+        $crawler2->filter('.p-card-chldrn-cntnr .card-border')->each(function ($node) {
+            dump($node->text());
+        });
+
+        dump('=====');
+        dump($crawler);
+        dump('=====');
+
+        return view('scraper', compact('data'));
     }
 }

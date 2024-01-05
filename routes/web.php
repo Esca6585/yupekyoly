@@ -20,6 +20,8 @@ Route::group([
     'where' => ['locale' => '[a-z]{2}'],
 ], function () {
     
+    Route::get('/scraper', [App\Http\Controllers\FrontControllers\FrontController::class, 'scraper'])->name('scraper');
+
     Route::get('/', [App\Http\Controllers\FrontControllers\FrontController::class, 'index'])->name('main-page');
 
     Route::get('/contact-us', [App\Http\Controllers\FrontControllers\FrontController::class, 'contactUs'])->name('contact-us');
